@@ -103,7 +103,7 @@ h1{
   position: absolute;
   top:55px;
 }
-@media screen and (max-width: 600px) {
+@media (pointer: coarse), screen and (max-width: 600px) {
   h1 {
       font-size: 2.5rem;
   }
@@ -112,7 +112,7 @@ h1{
     top:30px;
   }
 }
-@media screen and (max-width: 400px) {
+@media (pointer: coarse), screen and (max-width: 400px) {
   h1 {
       font-size: 2rem;
   }
