@@ -88,15 +88,30 @@ h1{
   font-size: 4.5rem;
   position: relative;
   text-align: center;
-  min-width: 660px;
+  display: inline-block;
+  margin: auto;
+  width: fit-content;
 }
 #tournoBall{
   height:65px;
   width:auto;
-  display: inline;
+  display: inline-block;
   position: absolute;
   top:55px;
 }
+/* On screens that are less than 600px wide*/
+@media screen and (max-width: 600px) {
+  h1 {
+      font-size: 2.5rem;
+  }
+  #tournoBall{
+    height:40px;
+    top:30px;
+  }
+}
+
+
+
 .blueBg{
   background-color: var(--tournBlue) !important;
 }
@@ -106,6 +121,9 @@ h1{
 .fullWidth{
   width: 100% !important;
   padding:var(--sectionPadding_topBottom) 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .borderBottom_green{
   border-bottom: 3px solid var(--green);
@@ -132,3 +150,4 @@ h1{
   background-color: var(--tournBlue);
   box-shadow: 3px 3px 3px var(--charcoal);
 }
+
