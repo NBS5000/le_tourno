@@ -69,6 +69,10 @@ section{
   margin: auto;
   width: 80%;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 main{
 
@@ -99,7 +103,6 @@ h1{
   position: absolute;
   top:55px;
 }
-/* On screens that are less than 600px wide*/
 @media screen and (max-width: 600px) {
   h1 {
       font-size: 2.5rem;
@@ -109,7 +112,15 @@ h1{
     top:30px;
   }
 }
-
+@media screen and (max-width: 400px) {
+  h1 {
+      font-size: 2rem;
+  }
+  #tournoBall{
+    height:30px;
+    top:24px;
+  }
+}
 
 
 .blueBg{
@@ -121,9 +132,7 @@ h1{
 .fullWidth{
   width: 100% !important;
   padding:var(--sectionPadding_topBottom) 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 .borderBottom_green{
   border-bottom: 3px solid var(--green);
