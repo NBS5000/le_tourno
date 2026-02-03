@@ -1,0 +1,133 @@
+:root{
+  --tournBlue: #1F3A5F;
+  --green:#2ECC71;
+  --amber:#F5A623;
+  --charcoal:#2B2B2B;
+  --offWhite:#F7F9FC;
+  --slate:#8A94A6;
+  --sectionPadding_topBottom:100px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition-duration: 0.4s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+body{
+  position: relative;
+  width: 100vw;
+  background: var(--offWhite);
+}
+.fugaz{
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+header,
+footer{
+  position: relative;
+  width:100%;
+  height:100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header{
+  background: var(--green);
+}
+footer{
+  background: var(--charcoal);
+  height:150px;
+  padding: 20px;
+}
+footer div{
+  max-width: 500px;
+  margin: auto;
+}
+footer div p{
+  font-size: 0.5rem;
+  margin-bottom: 15px;
+}
+footer div p a{
+  font-size: 0.5rem;
+  color: var(--amber);
+  text-decoration: none;
+  font-weight: 600;
+}
+header img{
+  height:60px;
+  width:60px;
+  margin-left: 5%;
+}
+section{
+  padding: var(--sectionPadding_topBottom) 0;
+  margin: auto;
+  width: 80%;
+  margin: auto;
+}
+main{
+
+}
+p{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.banner{
+  width: 100%;
+  height: 400px;
+  background: url('../img/tournament.png') no-repeat center / cover;
+}
+h1{
+  font-size: 4.5rem;
+  position: relative;
+  text-align: center;
+}
+#tournoBall{
+  height:65px;
+  width:auto;
+  display: inline;
+  position: absolute;
+  top:55px;
+}
+.blueBg{
+  background-color: var(--tournBlue) !important;
+}
+.whiteText{
+  color: var(--offWhite) !important;
+}
+.fullWidth{
+  width: 100% !important;
+  padding:var(--sectionPadding_topBottom) 10%;
+}
+.borderBottom_green{
+  border-bottom: 3px solid var(--green);
+}
+
+.btn{
+  background: var(--green);
+  width: 250px;
+  padding: 15px 30px;
+  text-align: center;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  display: block;
+}
+
+.btn a{
+  text-decoration: none;
+  color: white;
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: var(--tournBlue);
+  box-shadow: 3px 3px 3px var(--charcoal);
+}
